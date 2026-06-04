@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { font-family: 'DM Sans', sans-serif; }
+
+body { background: #F0F4F8; }
+
+.font-display { font-family: 'DM Serif Display', serif; }
+
+@keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+@keyframes slideIn { from { opacity:0; transform:translateX(-16px); } to { opacity:1; transform:translateX(0); } }
+@keyframes pulse-soft { 0%,100% { opacity:1; } 50% { opacity:.6; } }
+
+.animate-fade-in { animation: fadeIn 0.4s ease forwards; }
+.animate-slide-in { animation: slideIn 0.3s ease forwards; }
+.animate-pulse-soft { animation: pulse-soft 2s ease infinite; }
+
+.stagger-1 { animation-delay: 0.05s; opacity:0; }
+.stagger-2 { animation-delay: 0.10s; opacity:0; }
+.stagger-3 { animation-delay: 0.15s; opacity:0; }
+.stagger-4 { animation-delay: 0.20s; opacity:0; }
+.stagger-5 { animation-delay: 0.25s; opacity:0; }
